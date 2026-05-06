@@ -1,0 +1,1121 @@
+fileFormatVersion: 2
+guid: 9363ab798b487d745af4dbe5c4ec5948
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Princess2 invert_0
+      rect:
+        serializedVersion: 2
+        x: 3235
+        y: 3246
+        width: 597
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af4ad3e9a96a4344913a7ae85ad9898
+      internalID: 942730429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_1
+      rect:
+        serializedVersion: 2
+        x: 3928
+        y: 3246
+        width: 596
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d2749de31aba94180e6c88d1b5c528
+      internalID: -2002245980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_2
+      rect:
+        serializedVersion: 2
+        x: 4627
+        y: 3235
+        width: 437
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f2b149aad409349867d3b6829997c8
+      internalID: -569093519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_3
+      rect:
+        serializedVersion: 2
+        x: 5141
+        y: 3235
+        width: 410
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60268b1edd30c38459df7845eab45929
+      internalID: -1084533164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_4
+      rect:
+        serializedVersion: 2
+        x: 5533
+        y: 3235
+        width: 323
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1391a05c3df4d9444bb25afeea80e873
+      internalID: -1561078828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_5
+      rect:
+        serializedVersion: 2
+        x: 5932
+        y: 3235
+        width: 323
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2314c41c3a8beb48b96662d1be1d080
+      internalID: 1977115043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_6
+      rect:
+        serializedVersion: 2
+        x: 6331
+        y: 3235
+        width: 323
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058b05f734aad2a42ba21db2e0d2befe
+      internalID: 1305300687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_7
+      rect:
+        serializedVersion: 2
+        x: 6723
+        y: 3235
+        width: 340
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f304fddc9a1b5694b84a5da0ea5c77d0
+      internalID: -1651099349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_8
+      rect:
+        serializedVersion: 2
+        x: 7153
+        y: 3235
+        width: 384
+        height: 509
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94f17605cf28184abb7e16dbcbcbe3f
+      internalID: 1749074271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_9
+      rect:
+        serializedVersion: 2
+        x: 3825
+        y: 2330
+        width: 384
+        height: 585
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41758fd925670724bbd9a5bfae495230
+      internalID: -1854297141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_10
+      rect:
+        serializedVersion: 2
+        x: 5856
+        y: 2873
+        width: 220
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3942b1fe24cb8248815faa4d8fbd2bd
+      internalID: -1977619094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_11
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 2177
+        width: 388
+        height: 487
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29936b723a486ee42b8a7917525f4bb8
+      internalID: 539377150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_12
+      rect:
+        serializedVersion: 2
+        x: 3391
+        y: 2204
+        width: 369
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb95be2ce60b4947b9fe94262f4e4dc
+      internalID: 2120464905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_13
+      rect:
+        serializedVersion: 2
+        x: 4277
+        y: 2329
+        width: 369
+        height: 506
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01b0f30c2e8fd24caf5ea5663d55e3f
+      internalID: -2070202982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_14
+      rect:
+        serializedVersion: 2
+        x: 4722
+        y: 2227
+        width: 426
+        height: 555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631930af97bef56469b2979ca0a1dee5
+      internalID: 1348711971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_15
+      rect:
+        serializedVersion: 2
+        x: 5202
+        y: 2177
+        width: 384
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3320cb657105d3d498aeb35d8d93158c
+      internalID: -1548570963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_16
+      rect:
+        serializedVersion: 2
+        x: 5650
+        y: 2177
+        width: 391
+        height: 487
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7dc204c4c6d314ead3c7feb9bdb93f
+      internalID: -1541953393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_17
+      rect:
+        serializedVersion: 2
+        x: 6385
+        y: 2215
+        width: 376
+        height: 506
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a303adb0acc21824a82351c5299c254b
+      internalID: -1053668936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_18
+      rect:
+        serializedVersion: 2
+        x: 6845
+        y: 2204
+        width: 376
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f820524cddfb2e046a23dbce67875adf
+      internalID: 88391126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_19
+      rect:
+        serializedVersion: 2
+        x: 7370
+        y: 2204
+        width: 342
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3f15e4d7490934f85c7ead11254c99
+      internalID: 560970235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_20
+      rect:
+        serializedVersion: 2
+        x: 5597
+        y: 1866
+        width: 479
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f894f71bd2823d4b9e64b12f456fceb
+      internalID: 79815361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_21
+      rect:
+        serializedVersion: 2
+        x: 6369
+        y: 1561
+        width: 426
+        height: 555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e578b994393cd409c10b4ade1b4e53
+      internalID: -1140156259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_22
+      rect:
+        serializedVersion: 2
+        x: 6872
+        y: 1561
+        width: 406
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae0ce8b2803e9948b892362cc61de65
+      internalID: -313163479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_23
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 1561
+        width: 377
+        height: 506
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aaad781ae064bb47a6380c22a37a74c
+      internalID: 307031529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defending_3
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1242
+        width: 453
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28560db9c30086a49826b17d912820bf
+      internalID: 1108963618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defending_2
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1242
+        width: 437
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8742fc027e5f9444b01b2de173c1f64
+      internalID: -1058593845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defending_1
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 1242
+        width: 419
+        height: 494
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84de99f732a06d2438ad620c6688bcb2
+      internalID: -2013079046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_27
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 1249
+        width: 387
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fada039514ad314b859493d3e9c265e
+      internalID: -1493361187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_28
+      rect:
+        serializedVersion: 2
+        x: 4308
+        y: 1257
+        width: 376
+        height: 506
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a14aa65809b5049a58da5af40c3d0b
+      internalID: -1082277113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_29
+      rect:
+        serializedVersion: 2
+        x: 4734
+        y: 1250
+        width: 368
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c9a39a9833c09499cde4f3407dbcaa
+      internalID: -430902757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_30
+      rect:
+        serializedVersion: 2
+        x: 5133
+        y: 1249
+        width: 375
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf40065492674fd409f1105f657d95a7
+      internalID: 1525933355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_31
+      rect:
+        serializedVersion: 2
+        x: 5560
+        y: 1257
+        width: 379
+        height: 506
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee2b35be440882458d94391bcda445b
+      internalID: -1892559707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_32
+      rect:
+        serializedVersion: 2
+        x: 6377
+        y: 957
+        width: 388
+        height: 509
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d079620792781f845874fa6ef5a6703f
+      internalID: -382825698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_33
+      rect:
+        serializedVersion: 2
+        x: 6913
+        y: 957
+        width: 358
+        height: 486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c564d7ea1ffc6a04a837b8b39f55add6
+      internalID: 93219950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_34
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 957
+        width: 380
+        height: 509
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cc91607d04fb44ea216cad65bebf4a
+      internalID: 846215392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_35
+      rect:
+        serializedVersion: 2
+        x: 3764
+        y: 884
+        width: 270
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f796cbad829f0041bf5baf6bf826261
+      internalID: 755854171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_36
+      rect:
+        serializedVersion: 2
+        x: 4047
+        y: 884
+        width: 173
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd87a54ef71b1f748b33c7e71d681d77
+      internalID: -362557969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_37
+      rect:
+        serializedVersion: 2
+        x: 4232
+        y: 884
+        width: 270
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f33443cf4aba6c49a15d8ec32c110b4
+      internalID: -927048711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_38
+      rect:
+        serializedVersion: 2
+        x: 5612
+        y: 862
+        width: 464
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee7a5aba1a1817448b15d33f7849e63
+      internalID: 1200087206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_39
+      rect:
+        serializedVersion: 2
+        x: 3707
+        y: 373
+        width: 654
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a4d1247fc5f7b419872e68ba5cf50d
+      internalID: 1341124342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_40
+      rect:
+        serializedVersion: 2
+        x: 4954
+        y: 319
+        width: 384
+        height: 504
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e2036650280534fa89f9b2a6b5de5a
+      internalID: -1183264806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_41
+      rect:
+        serializedVersion: 2
+        x: 5464
+        y: 319
+        width: 384
+        height: 497
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158ae79b5cf024c49aa4bfa46035cfad
+      internalID: 1859573531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_42
+      rect:
+        serializedVersion: 2
+        x: 6461
+        y: 356
+        width: 654
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a386d990bf2254a9c320b3eb3361eb
+      internalID: -671575314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess2 invert_43
+      rect:
+        serializedVersion: 2
+        x: 7286
+        y: 333
+        width: 384
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efaaa0fe91fcea84495deaa0b9413494
+      internalID: -1243628384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Princess2 invert_0: 942730429
+      Princess2 invert_1: -2002245980
+      Princess2 invert_10: -1977619094
+      Princess2 invert_11: 539377150
+      Princess2 invert_12: 2120464905
+      Princess2 invert_13: -2070202982
+      Princess2 invert_14: 1348711971
+      Princess2 invert_15: -1548570963
+      Princess2 invert_16: -1541953393
+      Princess2 invert_17: -1053668936
+      Princess2 invert_18: 88391126
+      Princess2 invert_19: 560970235
+      Princess2 invert_2: -569093519
+      Princess2 invert_20: 79815361
+      Princess2 invert_21: -1140156259
+      Princess2 invert_22: -313163479
+      Princess2 invert_23: 307031529
+      Princess2 invert_27: -1493361187
+      Princess2 invert_28: -1082277113
+      Princess2 invert_29: -430902757
+      Princess2 invert_3: -1084533164
+      Princess2 invert_30: 1525933355
+      Princess2 invert_31: -1892559707
+      Princess2 invert_32: -382825698
+      Princess2 invert_33: 93219950
+      Princess2 invert_34: 846215392
+      Princess2 invert_35: 755854171
+      Princess2 invert_36: -362557969
+      Princess2 invert_37: -927048711
+      Princess2 invert_38: 1200087206
+      Princess2 invert_39: 1341124342
+      Princess2 invert_4: -1561078828
+      Princess2 invert_40: -1183264806
+      Princess2 invert_41: 1859573531
+      Princess2 invert_42: -671575314
+      Princess2 invert_43: -1243628384
+      Princess2 invert_5: 1977115043
+      Princess2 invert_6: 1305300687
+      Princess2 invert_7: -1651099349
+      Princess2 invert_8: 1749074271
+      Princess2 invert_9: -1854297141
+      defending_1: -2013079046
+      defending_2: -1058593845
+      defending_3: 1108963618
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
