@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     public float defendDuration = 0.5f;
     public int health = 5;
 
+    public Animator animator;
     public Rigidbody2D rb;
 
     PlayerCombat combat;
@@ -56,7 +57,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (!isAttacking && !isDefending && !combat.estaAtordoado && !levandoKnockback)
+        if (!isDefending && !combat.estaAtordoado && !levandoKnockback)
         {
             inputX = Input.GetAxisRaw("Horizontal");
         }
@@ -69,6 +70,7 @@ public class Player : MonoBehaviour
         else if (inputX < 0 && faceRight) Flip();
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        animacao.SetBool("isGrounded", isGrounded);
 
         if (isGrounded)
             coyoteTimeCounter = coyoteTime;
@@ -115,6 +117,10 @@ public class Player : MonoBehaviour
         {
             rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
         }
+        else if (isAttacking)
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
 
         if (health <= 0)
         {
@@ -125,11 +131,22 @@ public class Player : MonoBehaviour
     IEnumerator Attack()
     {
         isAttacking = true;
-        rb.velocity = Vector2.zero;
 
-        yield return new WaitForSeconds(attackDuration);
+        if (animator != null)
+        {
+            animator.SetBool("atacando", true);
+        }
 
+        yield return null;
+    }
+    public void EndAttack()
+    {
         isAttacking = false;
+
+        if (animator != null)
+        {
+            animator.SetBool("atacando", false);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -154,6 +171,11 @@ public class Player : MonoBehaviour
         {
             limitador_de_pulo = 1;
         }
+    }
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     public void TakeDamage(int dano, Transform inimigo)
