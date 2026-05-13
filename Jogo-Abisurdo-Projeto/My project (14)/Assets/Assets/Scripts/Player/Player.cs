@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
@@ -51,6 +52,8 @@ public class Player : MonoBehaviour
     bool levandoKnockback = false;
     bool podeTomarDano = true;
     bool morreu = false;
+    BoxCollider2D box;
+
 
     public int limitador_de_pulo = 1;
 
@@ -59,8 +62,10 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         combat = GetComponent<PlayerCombat>();
         animacao = GetComponent<Animator>();
-
         rb.gravityScale = 3f;
+
+        box = GetComponent<BoxCollider2D>();
+
     }
 
     void Update()
@@ -153,9 +158,13 @@ public class Player : MonoBehaviour
 
         rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
 
+        Vector2 tamanhoAtual = box.size;
+
+        box.size = new Vector2(tamanhoAtual.x, 0.5f);
         animacao.SetBool("morreu", true);
 
         StartCoroutine(GameOverDelay());
+
     }
 
     IEnumerator GameOverDelay()
