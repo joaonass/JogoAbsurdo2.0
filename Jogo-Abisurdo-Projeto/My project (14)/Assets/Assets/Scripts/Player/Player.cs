@@ -29,6 +29,13 @@ public class Player : MonoBehaviour
     public float attackDuration = 0.3f;
     public float defendDuration = 0.5f;
     public int health = 5;
+    public Transform attackPoint;
+    public float attackRange = 1f;
+    public LayerMask enemyLayers;
+
+    public int attackDamage = 1;
+
+    public GameObject gameOverPanel;
 
     public Animator animator;
     public Rigidbody2D rb;
@@ -43,6 +50,7 @@ public class Player : MonoBehaviour
     public bool isDefending = false;
     bool levandoKnockback = false;
     bool podeTomarDano = true;
+    bool morreu = false;
 
     public int limitador_de_pulo = 1;
 
@@ -57,6 +65,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (morreu)
+            return;
+
         if (!isDefending && !combat.estaAtordoado && !levandoKnockback)
         {
             inputX = Input.GetAxisRaw("Horizontal");
@@ -88,7 +99,7 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, -glideFallSpeed);
         }
 
-        if (Input.GetMouseButtonDown(0) && !isAttacking && !isDefending)
+        if (Input.GetMouseButtonDown(0) && !isAttacking && !isDefending && isGrounded)
         {
             StartCoroutine(Attack());
         }
@@ -124,8 +135,43 @@ public class Player : MonoBehaviour
 
         if (health <= 0)
         {
-            SceneManager.LoadScene(0);
+            Die();
         }
+    }
+
+    void Die()
+    {
+        if (morreu)
+            return;
+
+        morreu = true;
+
+        isAttacking = false;
+        isDefending = false;
+
+        rb.velocity = Vector2.zero;
+
+        rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+
+        animacao.SetBool("morreu", true);
+
+        StartCoroutine(GameOverDelay());
+    }
+
+    IEnumerator GameOverDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        Time.timeScale = 0f;
+
+        gameOverPanel.SetActive(true);
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     IEnumerator Attack()
@@ -146,6 +192,20 @@ public class Player : MonoBehaviour
         if (animator != null)
         {
             animator.SetBool("atacando", false);
+        }
+    }
+
+    public void Hit()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(
+            attackPoint.position,
+            attackRange,
+            enemyLayers
+        );
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
         }
     }
 
