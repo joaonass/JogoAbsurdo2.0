@@ -26484,31 +26484,21 @@ MonoBehaviour:
   jumpForce: 15
   glideFallSpeed: 1.2
   forcaKnockback: 12
-  forcaVertical: 8
+  forcaVertical: 6
   multiplicadorAr: 1.3
   tempoKnockback: 0.2
   coyoteTime: 0.15
-  jumpBufferTime: 0.15
   groundCheck: {fileID: 913704517}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  groundCheckRadius: 0.2
-  groundBoxSize: {x: 0.7, y: 0.1}
+  groundCheckRadius: 0.1
   isGrounded: 0
   attackDuration: 0.3
   defendDuration: 0.5
   health: 100
-  attackPoint: {fileID: 0}
-  attackRadius: 1
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  attackDamage: 1
-  tempoInvencibilidade: 1.5
-  animator: {fileID: 0}
-  animacao: {fileID: 0}
   rb: {fileID: 0}
+  animacao: {fileID: 0}
   isDefending: 0
   limitador_de_pulo: 1
 --- !u!95 &1042298947
@@ -27176,12 +27166,6 @@ MonoBehaviour:
   velocidadeVoo: 3
   velocidadeAtaque: 12
   velocidadeRetorno: 4
-  maxHealth: 50
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  groundCheck: {fileID: 0}
-  groundCheckRadius: 0.2
   tempoDeAviso: 0.6
   turnSpeed: 5
   tempoMaximoDive: 1
