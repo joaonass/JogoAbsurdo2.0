@@ -1,42 +1,49 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    
+
     enum PlayerState { Normal, Attack, Defense, Knockback, Dead }
     PlayerState currentState = PlayerState.Normal;
 
 
     [Header("Movimento")]
-    public float speed          = 6f;
-    public float jumpForce      = 10f;
+    public float speed = 6f;
+    public float jumpForce = 10f;
     public float glideFallSpeed = 1.2f;
 
     [Header("Pulo Responsivo")]
-    public float coyoteTime     = 0.15f;
+    public float coyoteTime = 0.15f;
     public float jumpBufferTime = 0.15f;
 
     float coyoteTimeCounter;
     float jumpBufferCounter;
-    public int limitador_de_pulo = 1;   
+    public int limitador_de_pulo = 1;
 
     [Header("Checagem de Chão")]
-    public Transform  groundCheck;
-    public LayerMask  groundLayer;
-    public float      groundCheckRadius = 0.2f;
-    public bool       isGrounded;
+    public Transform groundCheck;
+    public LayerMask groundLayer;
+    public float groundCheckRadius = 0.2f;
+    public bool isGrounded;
 
     [Header("Knockback")]
-    public float forcaKnockback   = 12f;
-    public float forcaVertical    = 6f;
-    public float multiplicadorAr  = 1.0f;
-    public float tempoKnockback   = 0.3f;
+    public float forcaKnockback = 12f;
+    public float forcaVertical = 6f;
+    public float multiplicadorAr = 1.0f;
+    public float tempoKnockback = 0.3f;
 
     [Header("Combate")]
-    public int   health          = 5;
-    public float attackDuration  = 0.3f;
+    public int health = 5;
+    public float attackDuration = 0.3f;
+
+    [Header("LifeBar")]
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
+
 
     [Header("Ataque")]
     public Transform attackPoint;
@@ -175,6 +182,34 @@ public class Player : MonoBehaviour
             StartCoroutine(AttackCoroutine());
     }
 
+    void UpdateHearts()
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < health)
+            {
+                hearts[i].sprite = fullHeart;
+            }
+            else
+            {
+                hearts[i].sprite = emptyHeart;
+            }
+        }
+
+    }
+
+    public void Heal(int amount)
+    {
+        health += amount;
+
+        if (health > 5)
+        {
+            health = 5;
+        }
+
+        UpdateHearts();
+    }
+
     IEnumerator AttackCoroutine()
     {
         isAttacking  = true;
@@ -245,6 +280,7 @@ public class Player : MonoBehaviour
         }
 
         health -= dano;
+        UpdateHearts();
         Debug.Log($"Vida atual: {health}");
 
         StartCoroutine(InvencibilidadeCoroutine());
