@@ -40,10 +40,13 @@ public class InimigoVoador : MonoBehaviour
     bool isGrounded;
 
         Rigidbody2D rb;
+        SpriteRenderer sr;
 
         void Start()
     {
-        rb            = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+
         startPosition = transform.position;
         currentHealth = maxHealth;
     }
@@ -68,6 +71,8 @@ public class InimigoVoador : MonoBehaviour
 
         if (isDiving)    Dive();
         if (retornando)  ReturnToStart();
+
+        VirarSprite();
     }
 
     void FixedUpdate()
@@ -192,4 +197,11 @@ public class InimigoVoador : MonoBehaviour
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
     }
+    void VirarSprite()
+{
+    if (rb.velocity.x > 0.1f)
+        sr.flipX = false;
+    else if (rb.velocity.x < -0.1f)
+        sr.flipX = true;
+}
 }
