@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public float groundCheckRadius = 0.2f;
+    public float voidHeight = -6.5f;
     public bool isGrounded;
 
     [Header("Knockback")]
@@ -61,6 +62,12 @@ public class Player : MonoBehaviour
     public Animator      animator;   // referência principal (usada em Animation Events)
     public Rigidbody2D   rb;
 
+    [Header("Ataque de Longe")]
+    public bool temSapato = false;
+
+    public GameObject sapatoPrefab;
+    public Transform pontoDisparo;
+
     PlayerCombat   combat;
     BoxCollider2D  box;
 
@@ -86,6 +93,16 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (transform.position.y < voidHeight && !morreu)
+        {
+            health = 0;
+            UpdateHearts();
+            Die();
+            return;
+        }
+        if (morreu)
+            return;
+
         if (currentState == PlayerState.Dead)
             return;
 
@@ -98,6 +115,8 @@ public class Player : MonoBehaviour
         Defesa();
         Ataque();
         AtualizarAnimacoes();
+
+        
     }
 
     void FixedUpdate()
@@ -176,10 +195,38 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, -glideFallSpeed);
     }
 
-        void Ataque()
+    void Ataque()
     {
         if (Input.GetMouseButtonDown(0) && !isAttacking && !isDefending)
             StartCoroutine(AttackCoroutine());
+    }
+
+    void Sapato()
+    {
+        if(Input.GetKeyDown(KeyCode.C) && temSapato)
+        {
+            AtirarSapato();
+        }
+    }
+
+    void AtirarSapato()
+    {
+        GameObject novoSapato = Instantiate(
+            sapatoPrefab,
+            pontoDisparo.position,
+            Quaternion.identity
+            );
+
+        Sapato sapato = novoSapato.GetComponent<Sapato>();
+
+        if (faceRight)
+        {
+            sapato.direction = Vector2.right;
+        }
+        else
+        {
+            sapato.direction = Vector2.up;
+        }
     }
 
     void UpdateHearts()
