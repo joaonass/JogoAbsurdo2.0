@@ -64,6 +64,8 @@ public class Player : MonoBehaviour
 
     [Header("Ataque de Longe")]
     public bool temSapato = false;
+    public float cooldownSapato = 0.7f;
+    private float timerSapato = 0f;
 
     public GameObject sapatoPrefab;
     public Transform pontoDisparo;
@@ -100,11 +102,17 @@ public class Player : MonoBehaviour
             Die();
             return;
         }
+
         if (morreu)
             return;
 
         if (currentState == PlayerState.Dead)
             return;
+
+        if (timerSapato > 0f)
+        {
+            timerSapato -= Time.deltaTime;
+        }
 
         VerificarChao();
         AtualizarTimers();
@@ -114,9 +122,8 @@ public class Player : MonoBehaviour
         Glide();
         Defesa();
         Ataque();
+        Sapato();
         AtualizarAnimacoes();
-
-        
     }
 
     void FixedUpdate()
@@ -203,30 +210,49 @@ public class Player : MonoBehaviour
 
     void Sapato()
     {
-        if(Input.GetKeyDown(KeyCode.C) && temSapato)
+        if (!temSapato)
+            return;
+
+        if (timerSapato > 0f)
+            return;
+
+        if (Input.GetKeyDown(KeyCode.C)
+            && !isAttacking
+            && !isDefending
+            && currentState == PlayerState.Normal)
         {
             AtirarSapato();
+
+            timerSapato = cooldownSapato;
         }
     }
 
     void AtirarSapato()
     {
+        if (sapatoPrefab == null || pontoDisparo == null)
+        {
+            Debug.LogWarning("SapatoPrefab ou PontoDisparo não foi configurado no Player.");
+            return;
+        }
+
         GameObject novoSapato = Instantiate(
             sapatoPrefab,
             pontoDisparo.position,
             Quaternion.identity
-            );
+        );
 
         Sapato sapato = novoSapato.GetComponent<Sapato>();
 
-        if (faceRight)
+        if (sapato == null)
         {
-            sapato.direction = Vector2.right;
+            Debug.LogWarning("O SapatoPrefab não possui o componente Sapato.");
+            Destroy(novoSapato);
+            return;
         }
-        else
-        {
-            sapato.direction = Vector2.up;
-        }
+
+        float direcaoHorizontal = faceRight ? 1f : -1f;
+
+        sapato.Lancar(direcaoHorizontal);
     }
 
     void UpdateHearts()
