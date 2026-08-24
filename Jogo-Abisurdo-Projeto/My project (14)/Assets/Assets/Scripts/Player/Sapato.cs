@@ -18,12 +18,19 @@ public class Sapato : MonoBehaviour
     [Header("Rotação")]
     public float velocidadeRotacao = 720f;
 
+    [Header("Tamanho")]
+    public float escalaX = 1.5f;
+    public float escalaY = 1f;
+
     private Rigidbody2D rb;
     private bool foiLancado = false;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        // Define o tamanho do sapato
+        transform.localScale = new Vector3(escalaX, escalaY, 1f);
 
         if (rb == null)
         {

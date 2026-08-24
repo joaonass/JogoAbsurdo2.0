@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3760860933061158703}
   - component: {fileID: -3551158104483439975}
   - component: {fileID: 6615484193737035295}
+  - component: {fileID: 6133522938302309411}
   m_Layer: 0
   m_Name: Projetil
   m_TagString: Inimigo
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -1963210419, guid: 1cf7babd97fae1d43a740117395e0e2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,6 +103,9 @@ MonoBehaviour:
   velocidade: 5
   tempoDeVida: 5
   dano: 1
+  velocidadeRotacao: 720
+  escalaX: 0.2
+  escalaY: 0.3
 --- !u!50 &-3551158104483439975
 Rigidbody2D:
   serializedVersion: 4
@@ -164,3 +168,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!95 &6133522938302309411
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3846875554801537820}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 17bb5d922103a9b49a4adb366724af94, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

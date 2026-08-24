@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1698f3796f793da4fafdb9a64032c598
+guid: aeb0dcc7ab206da4499e70b42614efc0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,17 +106,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Atq_0
+      name: Corpo_0
       rect:
         serializedVersion: 2
-        x: 98
-        y: 25
-        width: 91
-        height: 107
+        x: 40
+        y: 0
+        width: 472
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3958255f788e12b42ac707eb5f1627a5
-      internalID: -221975265
+      spriteID: 083dc50051052314090a5cfc65e06a95
+      internalID: 1507137115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atq_1
+      name: Corpo_1
       rect:
         serializedVersion: 2
-        x: 323
-        y: 62
-        width: 127
-        height: 64
+        x: 552
+        y: 0
+        width: 472
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55af26f8f76707a428a9bed828692f69
-      internalID: -143749434
+      spriteID: a7546ebfe0b5060448f47eaa737bf482
+      internalID: -1717536545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atq_2
+      name: Corpo_2
       rect:
         serializedVersion: 2
-        x: 563
-        y: 50
-        width: 154
-        height: 72
+        x: 1064
+        y: 0
+        width: 472
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 223ce75fc11241e438847b88ae9debfd
-      internalID: -2017183901
+      spriteID: 68ff31705867bf74985978607f5df79b
+      internalID: -2029123079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atq_3
+      name: Corpo_3
       rect:
         serializedVersion: 2
-        x: 835
-        y: 62
-        width: 159
-        height: 64
+        x: 1576
+        y: 0
+        width: 472
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,92 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 806b6223b5367bd4195e935fdf68747d
-      internalID: 420928051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atq_4
-      rect:
-        serializedVersion: 2
-        x: 1126
-        y: 66
-        width: 139
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81b65113f659f0444982a11ab9d3a488
-      internalID: 1105133160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atq_5
-      rect:
-        serializedVersion: 2
-        x: 1456
-        y: 66
-        width: 117
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78f0ba473f5de5845954072d350455e1
-      internalID: -998674262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atq_6
-      rect:
-        serializedVersion: 2
-        x: 1728
-        y: 41
-        width: 118
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff28037353f2b4641987616e89b30b1a
-      internalID: 72217995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atq_7
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 30
-        width: 101
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c89e33ee1a11e249a1b54936610511d
-      internalID: 709673390
+      spriteID: 01a40b66e17c91444b2c8f22e4666d01
+      internalID: 1707325588
       vertices: []
       indices: 
       edges: []
@@ -288,14 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Atq_0: -221975265
-      Atq_1: -143749434
-      Atq_2: -2017183901
-      Atq_3: 420928051
-      Atq_4: 1105133160
-      Atq_5: -998674262
-      Atq_6: 72217995
-      Atq_7: 709673390
+      Corpo_0: 1507137115
+      Corpo_1: -1717536545
+      Corpo_2: -2029123079
+      Corpo_3: 1707325588
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
