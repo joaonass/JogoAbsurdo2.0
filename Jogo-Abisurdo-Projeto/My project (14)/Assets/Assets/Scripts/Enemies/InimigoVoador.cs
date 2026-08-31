@@ -6,10 +6,12 @@ public class InimigoVoador : MonoBehaviour
 
     [Header("Detecção e Voo")]
     public Transform player;
-    public float deteccaoRange    = 10f;
-    public float velocidadeVoo    = 3f;
+    public float deteccaoRange = 10f;
+    public float velocidadeVoo = 3f;
     public float velocidadeAtaque = 12f;
     public float velocidadeRetorno = 4f;
+
+    public LayerMask camadaParede;
 
     [Header("Ataque")]
     public float tempoDeAviso   = 0.6f;
@@ -65,8 +67,12 @@ public class InimigoVoador : MonoBehaviour
         {
             Patrulhar();
 
-            if (distancia <= deteccaoRange && tempoCooldown <= 0f)
+            if (distancia <= deteccaoRange
+                && tempoCooldown <= 0f
+                && TemVisaoDoPlayer())
+            {
                 StartCoroutine(PrepararAtaque());
+            }
         }
 
         if (isDiving)    Dive();
@@ -92,6 +98,24 @@ public class InimigoVoador : MonoBehaviour
             groundCheckRadius,
             groundLayer
         );
+    }
+
+    bool TemVisaoDoPlayer()
+    {
+        Vector2 origem = transform.position;
+        Vector2 destino = player.position;
+
+        Vector2 direcao = destino - origem;
+        float distancia = direcao.magnitude;
+
+        RaycastHit2D hit = Physics2D.Raycast(
+            origem,
+            direcao.normalized,
+            distancia,
+            camadaParede
+        );
+
+        return hit.collider == null;
     }
     void Patrulhar()
     {

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HeartDrop : MonoBehaviour
@@ -13,18 +11,7 @@ public class HeartDrop : MonoBehaviour
         if (player != null)
         {
             player.Heal(healAmount);
-
             Destroy(gameObject);
         }
-    }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
     }
 }

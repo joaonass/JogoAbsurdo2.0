@@ -8,15 +8,26 @@ public class CameraFollow : MonoBehaviour
     public float smoothSpeed = 5f;
     public Vector3 offset;
 
+    public bool seguirVertical = false;
+
     void LateUpdate()
     {
+        float posicaoY;
+
+        if (seguirVertical)
+        {
+            posicaoY = target.position.y + offset.y;
+        }
+        else
+        {
+            posicaoY = transform.position.y;
+        }
+
         Vector3 desiredPosition = new Vector3(
             target.position.x + offset.x,
-            transform.position.y,
-            offset.z
+            posicaoY,
+            -10f
         );
-
-        desiredPosition.z = -10f;
 
         Vector3 smoothedPosition = Vector3.Lerp(
             transform.position,
@@ -26,10 +37,4 @@ public class CameraFollow : MonoBehaviour
 
         transform.position = smoothedPosition;
     }
-
-    void Start()
-    {
-        
-    }
-
 }

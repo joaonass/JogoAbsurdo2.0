@@ -10,6 +10,11 @@ public class InimigoCobra : MonoBehaviour
     [Header("Movimento")]
     public float velocidadeMovimento = 2.5f;
 
+    [Header("Detecção de Abismo")]
+    public LayerMask camadaChao;
+    public float distanciaFrente = 0.5f;
+    public float distanciaDetectorAbismo = 1.5f;
+
     [Header("Ataque")]
     public int dano = 1;
     public float tempoDeGrab = 2f;
@@ -51,67 +56,88 @@ public class InimigoCobra : MonoBehaviour
     }
 
     void Update()
-{
-    if (player == null)
-        return;
-
-    OlharParaJogador();
-
-    if (!estaAgarrando && !estaRecuando && !estaEmPausa)
     {
-        SeguirJogador();
+        if (player == null)
+            return;
+
+        OlharParaJogador();
+
+        if (!estaAgarrando && !estaRecuando && !estaEmPausa)
+        {
+            SeguirJogador();
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
     }
-    else
-    {
-        rb.velocity = new Vector2(0, rb.velocity.y);
-    }
-}
 
     void SeguirJogador()
-{
-    float distancia = Mathf.Abs(
-        player.position.x - transform.position.x
-    );
-
-    // Jogador está longe demais
-    if (distancia > distanciaMaximaPerseguicao)
     {
-        rb.velocity = new Vector2(0, rb.velocity.y);
-        return;
+        float distancia = Mathf.Abs(
+            player.position.x - transform.position.x
+        );
+
+        // Jogador está longe demais
+        if (distancia > distanciaMaximaPerseguicao)
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+            return;
+        }
+
+        // Para quando estiver perto o suficiente
+        if (distancia < 0.5f)
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+            return;
+        }
+
+        // Descobre para qual lado precisa andar
+        float direcao = Mathf.Sign(
+            player.position.x - transform.position.x
+        );
+
+        // Verifica se existe chão na frente
+        Vector2 origemDetector = new Vector2(
+            transform.position.x + (direcao * distanciaFrente),
+            transform.position.y
+        );
+
+        RaycastHit2D encontrouChao = Physics2D.Raycast(
+            origemDetector,
+            Vector2.down,
+            distanciaDetectorAbismo,
+            camadaChao
+        );
+
+        // Se não encontrou chão, chegou ao abismo
+        if (encontrouChao.collider == null)
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+            return;
+        }
+
+        // Existe chão → pode continuar perseguindo
+        rb.velocity = new Vector2(
+            direcao * velocidadeMovimento,
+            rb.velocity.y
+        );
     }
 
-    // Para quando estiver perto o suficiente
-    if (distancia < 0.5f)
-    {
-        rb.velocity = new Vector2(0, rb.velocity.y);
-        return;
-    }
-
-    float direcao = Mathf.Sign(
-        player.position.x - transform.position.x
-    );
-
-    rb.velocity = new Vector2(
-        direcao * velocidadeMovimento,
-        rb.velocity.y
-    );
-}
     void OlharParaJogador()
-{
-    if (player == null || spriteRenderer == null)
-        return;
+    {
+        if (player == null || spriteRenderer == null)
+            return;
 
-    if (player.position.x > transform.position.x)
-    {
-        // Jogador está à direita
-        spriteRenderer.flipX = true;
+        if (player.position.x > transform.position.x)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (player.position.x < transform.position.x)
+        {
+            spriteRenderer.flipX = false;
+        }
     }
-    else if (player.position.x < transform.position.x)
-    {
-        // Jogador está à esquerda
-        spriteRenderer.flipX = false;
-    }
-}
 
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -217,5 +243,28 @@ public class InimigoCobra : MonoBehaviour
         );
 
         estaEmPausa = false;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        float direcao = 1f;
+
+        if (player != null)
+        {
+            direcao = Mathf.Sign(
+                player.position.x - transform.position.x
+            );
+        }
+
+        Vector2 origem = new Vector2(
+            transform.position.x + (direcao * distanciaFrente),
+            transform.position.y
+        );
+
+        Vector2 fim = origem + Vector2.down * distanciaDetectorAbismo;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(origem, fim);
+        Gizmos.DrawWireSphere(fim, 0.05f);
     }
 }
