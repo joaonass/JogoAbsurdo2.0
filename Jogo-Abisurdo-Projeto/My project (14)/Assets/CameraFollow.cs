@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
@@ -10,18 +8,18 @@ public class CameraFollow : MonoBehaviour
 
     public bool seguirVertical = false;
 
+    public float limiteY = 0f;
+
     void LateUpdate()
     {
         float posicaoY;
 
         if (seguirVertical)
-        {
             posicaoY = target.position.y + offset.y;
-        }
         else
-        {
             posicaoY = transform.position.y;
-        }
+
+        posicaoY = Mathf.Max(posicaoY, limiteY);
 
         Vector3 desiredPosition = new Vector3(
             target.position.x + offset.x,
