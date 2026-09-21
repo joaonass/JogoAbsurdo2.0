@@ -4,6 +4,15 @@ public class BauPowerUp : MonoBehaviour
 {
     private bool coletado = false;
 
+    private Animator animator;
+
+    public SapatoHUD sapatoHUD;
+
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (coletado)
@@ -17,9 +26,17 @@ public class BauPowerUp : MonoBehaviour
 
             coletado = true;
 
-            Debug.Log("Power-up do sapato adquirido!");
+            if (animator != null)
+            {
+                animator.SetTrigger("Abrir");
+            }
 
-            Destroy(gameObject);
+            if (sapatoHUD != null)
+            {
+                sapatoHUD.MostrarSapato();
+            }
+
+            Debug.Log("Power-up do sapato adquirido!");
         }
     }
 }
