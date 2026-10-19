@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
@@ -7,17 +8,34 @@ public class CameraFollow : MonoBehaviour
     public Vector3 offset;
 
     public bool seguirVertical = false;
+    public float limiteY = -100f;
 
-    public float limiteY = 0f;
+    private float alturaInicialCamera;
+
+    void Start()
+    {
+        alturaInicialCamera = transform.position.y;
+    }
 
     void LateUpdate()
     {
+        if (target == null) return;
+
         float posicaoY;
 
         if (seguirVertical)
+        {
             posicaoY = target.position.y + offset.y;
+        }
         else
-            posicaoY = transform.position.y;
+        {
+            // Mantém a altura inicial, mas permite acompanhar
+            // o player se ele descer abaixo dela.
+            posicaoY = Mathf.Min(
+                alturaInicialCamera,
+                target.position.y + offset.y
+            );
+        }
 
         posicaoY = Mathf.Max(posicaoY, limiteY);
 
@@ -27,12 +45,10 @@ public class CameraFollow : MonoBehaviour
             -10f
         );
 
-        Vector3 smoothedPosition = Vector3.Lerp(
+        transform.position = Vector3.Lerp(
             transform.position,
             desiredPosition,
             smoothSpeed * Time.deltaTime
         );
-
-        transform.position = smoothedPosition;
     }
 }

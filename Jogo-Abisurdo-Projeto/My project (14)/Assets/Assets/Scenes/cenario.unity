@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290d2fe0ba3fb98468153cc4d81fc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 1
   heartDrop: {fileID: 9096081960059808642, guid: c34951d4abe13be4f9c45a1baaf58da4, type: 3}
 --- !u!95 &229825282
 Animator:
@@ -1346,7 +1346,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8828125, y: 1}
+  m_Size: {x: 0.6, y: 0.7}
   m_EdgeRadius: 0
 --- !u!50 &281087172
 Rigidbody2D:
@@ -1374,7 +1374,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &281087173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1394,7 +1394,7 @@ MonoBehaviour:
   velocidadeRetorno: 4
   camadaParede:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   tempoDeAviso: 0.6
   turnSpeed: 5
   tempoMaximoDive: 1
@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290d2fe0ba3fb98468153cc4d81fc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 1
   heartDrop: {fileID: 9096081960059808642, guid: c34951d4abe13be4f9c45a1baaf58da4, type: 3}
 --- !u!114 &358210363
 MonoBehaviour:
@@ -36975,7 +36975,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8828125, y: 1}
+  m_Size: {x: 0.6, y: 0.7}
   m_EdgeRadius: 0
 --- !u!50 &868798014
 Rigidbody2D:
@@ -37023,9 +37023,9 @@ MonoBehaviour:
   velocidadeRetorno: 4
   camadaParede:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   tempoDeAviso: 0.6
-  turnSpeed: 5
+  turnSpeed: 3
   tempoMaximoDive: 1
   cooldownAtaque: 1.5
   maxHealth: 50
@@ -38175,7 +38175,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1038252522}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 86273c2f9596e5c488051cf1742af861, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -38195,7 +38195,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -38209,7 +38209,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8828125, y: 1}
+  m_Size: {x: 0.6, y: 0.7}
   m_EdgeRadius: 0
 --- !u!50 &1038252526
 Rigidbody2D:
@@ -38259,7 +38259,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   tempoDeAviso: 0.6
-  turnSpeed: 5
+  turnSpeed: 3
   tempoMaximoDive: 1
   cooldownAtaque: 1.5
   maxHealth: 50
@@ -38559,7 +38559,7 @@ Transform:
   m_GameObject: {fileID: 1042298944}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 83.57, y: -1.45, z: -1}
+  m_LocalPosition: {x: -57.98, y: -2.13, z: -1}
   m_LocalScale: {x: 0.3281504, y: 0.3195383, z: 0.32815036}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39407,7 +39407,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   tempoDeAviso: 0.6
-  turnSpeed: 5
+  turnSpeed: 3
   tempoMaximoDive: 1
   cooldownAtaque: 1.5
   maxHealth: 50
@@ -39459,7 +39459,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8828125, y: 1}
+  m_Size: {x: 0.6, y: 0.7}
   m_EdgeRadius: 0
 --- !u!114 &1163233455
 MonoBehaviour:
@@ -40011,7 +40011,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8828125, y: 1}
+  m_Size: {x: 0.6, y: 0.7}
   m_EdgeRadius: 0
 --- !u!50 &1324818487
 Rigidbody2D:
@@ -40061,7 +40061,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   tempoDeAviso: 0.6
-  turnSpeed: 5
+  turnSpeed: 3
   tempoMaximoDive: 1
   cooldownAtaque: 1.5
   maxHealth: 50
@@ -40414,7 +40414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290d2fe0ba3fb98468153cc4d81fc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 1
   heartDrop: {fileID: 9096081960059808642, guid: c34951d4abe13be4f9c45a1baaf58da4, type: 3}
 --- !u!114 &1329075999
 MonoBehaviour:
@@ -41203,7 +41203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290d2fe0ba3fb98468153cc4d81fc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 1
   heartDrop: {fileID: 9096081960059808642, guid: c34951d4abe13be4f9c45a1baaf58da4, type: 3}
 --- !u!114 &1537687978
 MonoBehaviour:
@@ -41522,7 +41522,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8828125, y: 1}
+  m_Size: {x: 0.6, y: 0.7}
   m_EdgeRadius: 0
 --- !u!50 &1626615090
 Rigidbody2D:
@@ -41564,15 +41564,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1042298951}
-  deteccaoRange: 10
+  deteccaoRange: 6
   velocidadeVoo: 3
   velocidadeAtaque: 12
   velocidadeRetorno: 4
   camadaParede:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   tempoDeAviso: 0.6
-  turnSpeed: 5
+  turnSpeed: 3
   tempoMaximoDive: 1
   cooldownAtaque: 1.5
   maxHealth: 50
@@ -42093,6 +42093,7 @@ MonoBehaviour:
   smoothSpeed: 5
   offset: {x: 0, y: 0, z: 0}
   seguirVertical: 0
+  limiteY: -100
 --- !u!1 &1761939533
 GameObject:
   m_ObjectHideFlags: 0
@@ -43620,7 +43621,7 @@ Transform:
   m_GameObject: {fileID: 1998143905}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.147, y: -5.863, z: -2.01}
+  m_LocalPosition: {x: 18.102, y: -5.28, z: -2.01}
   m_LocalScale: {x: 1.0582, y: 1.1164, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43638,6 +43639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843d4cd5b3e6c1946a58e681fafb552b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sapatoHUD: {fileID: 0}
 --- !u!61 &1998143909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44274,7 +44276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290d2fe0ba3fb98468153cc4d81fc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 1
   heartDrop: {fileID: 9096081960059808642, guid: c34951d4abe13be4f9c45a1baaf58da4, type: 3}
 --- !u!114 &2090738172
 MonoBehaviour:

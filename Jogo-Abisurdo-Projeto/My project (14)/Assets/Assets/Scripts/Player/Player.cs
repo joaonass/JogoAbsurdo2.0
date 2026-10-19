@@ -91,6 +91,9 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb.gravityScale = 3f;
+
+        health = Mathf.Clamp(health, 0, 5);
+        UpdateHearts();
     }
 
     void Update()
@@ -257,29 +260,21 @@ public class Player : MonoBehaviour
 
     void UpdateHearts()
     {
+        if (hearts == null) return;
+
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (i < health)
-            {
-                hearts[i].sprite = fullHeart;
-            }
-            else
-            {
-                hearts[i].sprite = emptyHeart;
-            }
-        }
+            if (hearts[i] == null) continue;
 
+            hearts[i].sprite = (i < health)
+                ? fullHeart
+                : emptyHeart;
+        }
     }
 
     public void Heal(int amount)
     {
-        health += amount;
-
-        if (health > 5)
-        {
-            health = 5;
-        }
-
+        health = Mathf.Clamp(health + amount, 0, 5);
         UpdateHearts();
     }
 
@@ -473,4 +468,5 @@ public class Player : MonoBehaviour
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
     }
+
 }
