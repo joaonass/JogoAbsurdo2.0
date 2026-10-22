@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ViniG\\Documents\\GitHub\\JogoAbsurdo2.0(191026)\\Jogo-Abisurdo-Projeto\\My project (14)\\",
+  "WorkspaceRootPath": "C:\\Users\\ViniG\\Documents\\GitHub\\JogoAbsurdo2.0(221026)\\Jogo-Abisurdo-Projeto\\My project (14)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{725ACCA2-14DA-7929-274D-D55CB222DBCA}|Assembly-CSharp.csproj|c:\\users\\vinig\\documents\\github\\jogoabsurdo2.0(191026)\\jogo-abisurdo-projeto\\my project (14)\\assets\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{725ACCA2-14DA-7929-274D-D55CB222DBCA}|Assembly-CSharp.csproj|c:\\users\\vinig\\documents\\github\\jogoabsurdo2.0(221026)\\jogo-abisurdo-projeto\\my project (14)\\assets\\assets\\scripts\\buttoncursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725ACCA2-14DA-7929-274D-D55CB222DBCA}|Assembly-CSharp.csproj|solutionrelative:assets\\assets\\scripts\\buttoncursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725ACCA2-14DA-7929-274D-D55CB222DBCA}|Assembly-CSharp.csproj|C:\\Users\\ViniG\\Documents\\GitHub\\JogoAbsurdo2.0(221026)\\Jogo-Abisurdo-Projeto\\My project (14)\\assets\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{725ACCA2-14DA-7929-274D-D55CB222DBCA}|Assembly-CSharp.csproj|solutionrelative:assets\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,15 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PauseMenu.cs",
-              "DocumentMoniker": "C:\\Users\\ViniG\\Documents\\GitHub\\JogoAbsurdo2.0(191026)\\Jogo-Abisurdo-Projeto\\My project (14)\\Assets\\Assets\\Scripts\\PauseMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Assets\\Scripts\\PauseMenu.cs",
-              "ToolTip": "C:\\Users\\ViniG\\Documents\\GitHub\\JogoAbsurdo2.0(191026)\\Jogo-Abisurdo-Projeto\\My project (14)\\Assets\\Assets\\Scripts\\PauseMenu.cs",
-              "RelativeToolTip": "Assets\\Assets\\Scripts\\PauseMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ButtonCursor.cs",
+              "DocumentMoniker": "C:\\Users\\ViniG\\Documents\\GitHub\\JogoAbsurdo2.0(221026)\\Jogo-Abisurdo-Projeto\\My project (14)\\Assets\\Assets\\Scripts\\ButtonCursor.cs",
+              "RelativeDocumentMoniker": "Assets\\Assets\\Scripts\\ButtonCursor.cs",
+              "ToolTip": "C:\\Users\\ViniG\\Documents\\GitHub\\JogoAbsurdo2.0(221026)\\Jogo-Abisurdo-Projeto\\My project (14)\\Assets\\Assets\\Scripts\\ButtonCursor.cs",
+              "RelativeToolTip": "Assets\\Assets\\Scripts\\ButtonCursor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T23:02:24.478Z",
+              "WhenOpened": "2026-10-22T18:38:42.135Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PauseMenu.cs",
+              "DocumentMoniker": "C:\\Users\\ViniG\\Documents\\GitHub\\JogoAbsurdo2.0(221026)\\Jogo-Abisurdo-Projeto\\My project (14)\\Assets\\Assets\\Scripts\\PauseMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Assets\\Scripts\\PauseMenu.cs",
+              "ToolTip": "C:\\Users\\ViniG\\Documents\\GitHub\\JogoAbsurdo2.0(221026)\\Jogo-Abisurdo-Projeto\\My project (14)\\Assets\\Assets\\Scripts\\PauseMenu.cs",
+              "RelativeToolTip": "Assets\\Assets\\Scripts\\PauseMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T18:01:13.246Z"
             }
           ]
         }

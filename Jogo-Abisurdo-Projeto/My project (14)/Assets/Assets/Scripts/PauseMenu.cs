@@ -4,42 +4,64 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject coracoes;
 
-    private bool isPaused;
+    private bool isPaused = false;
+
+    private void Start()
+    {
+        pausePanel.SetActive(false);
+
+        if (coracoes != null)
+            coracoes.SetActive(true);
+
+        Time.timeScale = 1f;
+    }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (isPaused) Resume();
-            else Pause();
+            if (isPaused)
+                Resume();
+            else
+                Pause();
         }
     }
 
     public void Pause()
     {
         pausePanel.SetActive(true);
-        Time.timeScale = 0f;   // congela o jogo
+
+        if (coracoes != null)
+            coracoes.SetActive(false);
+
+        Time.timeScale = 0f;
         isPaused = true;
     }
 
     public void Resume()
     {
         pausePanel.SetActive(false);
-        Time.timeScale = 1f;   // volta ao normal
+
+        if (coracoes != null)
+            coracoes.SetActive(true);
+
+        Time.timeScale = 1f;
         isPaused = false;
     }
 
     public void Restart()
     {
-        Time.timeScale = 1f;   // importante resetar antes de trocar de cena
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void QuitGame()
     {
         Time.timeScale = 1f;
-        Application.Quit();    // não faz nada no Editor
+        Application.Quit();
+
         Debug.Log("Saindo do jogo...");
     }
 }
