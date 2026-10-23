@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 119
+  controlID: 111
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -412,10 +412,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 113.20001}
-      m_SelectedIDs: 20670000
-      m_LastClickedID: 26400
-      m_ExpandedIDs: 12fbffff32660000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 526f0000
+      m_LastClickedID: 28498
+      m_ExpandedIDs: dea8ffff46acffff66b3ffff2ec1ffff30c8ffff12fbffffc66400009466000020670000246f00002e6f0000386f00005a6f0000806f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -775,7 +775,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 48, y: 48}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -834,9 +834,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 570.76086, y: 427.1425, z: -13.333351}
+    m_Target: {x: 894.99927, y: 540.01074, z: -11.493123}
     speed: 2
-    m_Value: {x: 570.76086, y: 427.1425, z: -13.333351}
+    m_Value: {x: 894.99927, y: 540.01074, z: -11.493123}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -886,9 +886,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 659.527
+    m_Target: 706.2919
     speed: 2
-    m_Value: 659.527
+    m_Value: 706.2919
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1045,7 +1045,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets/Sprites/pause
+    - Assets/Assets/menus/inicio
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1053,31 +1053,31 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Assets/Sprites/pause
+  - Assets/Assets/menus/inicio
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ViniG\Documents\GitHub\JogoAbsurdo2.0(221026)\Jogo-Abisurdo-Projeto\My
     project (14)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 115}
-    m_SelectedIDs: 3c6a0000
-    m_LastClickedID: 27196
-    m_ExpandedIDs: 00000000806900002a6a00003e6a000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: de6a0000
+    m_LastClickedID: 27358
+    m_ExpandedIDs: 000000007c690000266a00003a6a0000586a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: gameOver
+      m_OriginalName: gameOver
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 27350
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -1091,7 +1091,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 343}
     m_SelectedIDs: da7a0000
     m_LastClickedID: 31450
-    m_ExpandedIDs: 0000000080690000
+    m_ExpandedIDs: 000000007c690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1118,7 +1118,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000766c0000506d0000f05a0000105b000094780000da110200361402001ada0000c4a50000fab40000d07a00000000000002640000b88f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
